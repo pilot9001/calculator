@@ -6,6 +6,7 @@ pipeline {
         stage("Setup script") {
             steps {
                 sh """
+                    pip install --upgrade pip
                     pip install pytest
                 """
             } //steps
